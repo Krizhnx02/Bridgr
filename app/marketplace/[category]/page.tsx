@@ -6,6 +6,7 @@ import PartnersSection from '@/components/marketplace/PartnersSection';
 import CategoryBenefits from '@/components/marketplace/CategoryBenefits';
 import FeaturedPartners from '@/components/marketplace/FeaturedPartners';
 import ComparisonTable from '@/components/marketplace/ComparisonTable';
+import SimPlanComparison from '@/components/marketplace/SimPlanComparison';
 import FAQ from '@/components/FAQ';
 import CTABanner from '@/components/marketplace/CTABanner';
 import Footer from '@/components/Footer';
@@ -50,6 +51,8 @@ export default async function CategoryPage({ params }: PageProps) {
       />
       
       <main>
+        {category === 'sim-card' && <SimPlanComparison />}
+        
         <PartnersSection
           category={category}
           vendors={categoryData.vendors}

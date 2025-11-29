@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { getVendorData } from '@/lib/vendorData';
 import Header from '@/components/Header';
 import VendorHero from '@/components/marketplace/VendorHero';
+import VendorBenefits from '@/components/marketplace/VendorBenefits';
+import VendorProducts from '@/components/marketplace/VendorProducts';
 import VendorDetails from '@/components/marketplace/VendorDetails';
 import FAQ from '@/components/FAQ';
 import CTABanner from '@/components/marketplace/CTABanner';
@@ -47,6 +49,16 @@ export default async function VendorPage({ params }: PageProps) {
       />
       
       <main>
+        <VendorBenefits
+          vendor={vendorData}
+          category={category}
+        />
+        
+        <VendorProducts
+          vendor={vendorData}
+          category={category}
+        />
+        
         <VendorDetails vendor={vendorData} />
         
         {vendorData.faqs && vendorData.faqs.length > 0 && (

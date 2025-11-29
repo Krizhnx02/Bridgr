@@ -51,8 +51,8 @@ export default function FAQ({ faqs: propFaqs }: FAQProps) {
   return (
     <section id="faqs" className="bg-gray-50 py-16 sm:py-24">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6 sm:mb-4">
             Frequently Asked Questions
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">

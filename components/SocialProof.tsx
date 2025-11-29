@@ -31,8 +31,8 @@ export default function SocialProof() {
     <section id="partners" className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Testimonials */}
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6 sm:mb-4">
             Trusted by Students Worldwide
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
